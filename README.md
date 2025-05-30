@@ -6,7 +6,7 @@ Reference Link :
 - https://www.arm.com/resources/education/books/fundamentals-soc
 - https://www.arm.com/resources/education/books/modern-soc
 
-## Interconnect Basics (Outdated old concept) : Interconnecting Multiple Requestors and Completers
+## Interconnect Basics : Interconnecting Multiple Requestors and Completers
 
 We need to find a way to interconnect Multiple Requestor – Completer pairs together. The Interconnect Fabric is used for connecting Multiple Requestor and Multiple Completer. 
 
