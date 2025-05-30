@@ -83,9 +83,10 @@ The interconnect fabric is, therefore, a **central part of a SoC** and its imple
   - All requestor and completer interconnect interfaces have to be guarded by a tri-state gate because only a single requestor–completer pair can be connected to the bus at any given time.
   - An additional out-of-protocol signal between the requestors and the arbiter for this purpose. The arbiter receives all requestor requests and sequentially grants bus access by enabling the specific requestor and completer’s tri-state gates.
   - The Shared buses don’t support any notion of concurrency.
-  - 
+  
   
   ![image](https://github.com/user-attachments/assets/08fbc4bf-439c-4206-964f-31e436d6510f)
+
 
 - Full Crossbar-switch Architectures
   - The full crossbar interconnects all requestors to all completers by layering a switch in front of all of the completers.
@@ -94,11 +95,18 @@ The interconnect fabric is, therefore, a **central part of a SoC** and its imple
   - Yellow circle : Active connection.
   - In the below image the left hand side we observe that both the requestor-completer side switch are distinct.
   - In the right hand side we see both the requestor try to communicate with same completer at the same time. We need arbitration logic here.
-  - 
+  - Enable Maximium concurrency using a fine-grained completer-side arbitration scheme. Used in High throughput interconnects.
+  - The interconnect protocol itself acts as the arbitration mechanism, while the arbiter design defines the arbitration policy (e.g. round-robin access to queued requestors, priority access for certain requestors, etc.).
+    
   ![image](https://github.com/user-attachments/assets/5132909b-c2ad-4554-afb1-c0f6a511d6f6)
 
-- Full Crossbar-switch Architectures
-  
+
+- Partial Crossbar-switch Architectures
+  - In real-world SoCs, some requestors may only ever need connectivity to a subset of the system’s available completers.
+  - The Partial crossbar switches offer all the advantages of full crossbar switches, while saving area by eliminating unneeded connectivity between certain requestor–completer pairs
+
+  ![image](https://github.com/user-attachments/assets/6679e3af-cdf3-40f3-a69b-61b8c3430c5e)
+
 
 
 
