@@ -1,6 +1,6 @@
 # Network On Chip (NoC) 
 
-In General for Complex Architecture like SoC where there are multiple IP's trying to communicate each other and access Memory Simultaneously. In general we measre the Performance Metrics, Area and Power (PPA) how it affects with and without NoC. Especially this is needed for PD flow. 
+In General for Complex Architecture like SoC where there are multiple IP's trying to communicate each other and access Memory Simultaneously. In general we measre the Performance Metrics, Area and Power (PPA) how it affects with and without NoC. Especially this is needed for PD flow. In general just sharing the information or for reference.
 
 ## Why NoC?
 In General many SoC or Silicon companies want faster Tapeout at less Non - Recurring Engineering Cost (NRE like taught in college). They buy many Silicon proven IP's from multiple vendors and few have there own Custom IP's also. Having NoC has following adavatages :
