@@ -11,7 +11,7 @@ In General many SoC or Silicon companies want faster Tapeout at less Non - Recur
 - Timing Closure
 - Topology and Distributed Architecture
 
-For More Information Link : 
+# Information Link : 
 -  This explains about the need of NoC a very informative page to understand : https://www.design-reuse.com/article/61407-meet-the-next-generation-network-on-chip-from-arteris/
 -  FlexNoC : https://www.arteris.com/products/non-coherent-interconnect-ip/flexnoc/
 -  Conquer SoC creation and deployment challenges
